@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>mChem</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/sb-admin.css" rel="stylesheet">
+
+    <!-- Morris Charts CSS -->
+    <link href="css/plugins/morris.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+        <!-- Navigation -->
+        <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html"><strong>mChemo</strong></a>
+            </div>
+            <!-- Top Menu Items -->
+            <ul class="nav navbar-right top-nav">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Resources</a></li>
+                <li><a href="#">Tools</a></li>
+                <li><a href="#">Tutorials</a></li>
+                <li><a href="#">Help</a></li>
+                <li><a href="#">About</a></li>
+                <form class="navbar-form navbar-left">
+                  <form class="navbar-form" role="search">
+                          <div class="input-group">
+                              <input type="text" class="form-control" placeholder="Search.." name="q">
+                              <div class="input-group-btn">
+                                  <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+                              </div>
+                          </div>
+
+                </form>
+
+            </ul>
+            <!-- Sidebar Menu Items - These collapse to the responsive navigation menu on small screens -->
+
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav side-nav">
+                    <li class="active">
+                        <a href="javascript:;" data-toggle="collapse" data-target="#single"><i class="fa fa-fw fa-list" aria-hidden="true"></i> Cancer Type <i class="fa fa-fw fa-caret-down"></i></a>
+                        <ul id="single" class="collapse">
+                            <li>
+                                <a href="javascript:;" data-toggle="collapse" data-target="#singleCancer">Single Cancer Analysis<i class="fa fa-fw fa-caret-down"></i></a>
+                                <ul id="singleCancer" class="collapse">
+                                    <li>
+                                        <a href="#">Breast Cancer</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Cervical Cancer</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:;" data-toggle="collapse" data-target="#colorectalCancer">Colorectal Cancer<i class="fa fa-fw fa-caret-down"></i></a>
+                                        <ul id="colorectalCancer" class="collapse">
+                                            <li>
+                                                <a href="#">Colon Adenocarcinoma</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Rectum Adenocarcinoma</a>
+                                            </li>
+                                        </ul>
+
+                                    </li>
+                                    <li>
+                                        <a href="javascript:;" data-toggle="collapse" data-target="#kidneyCancer">Kidney Cancer<i class="fa fa-fw fa-caret-down"></i></a>
+                                        <ul id="kidneyCancer" class="collapse">
+                                            <li>
+                                                <a href="#">Kidney Chromophobe</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Kidney Renal Clear Cell Carcinoma</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Kidney Renal Papillary Cell Carcinoma</a>
+                                            </li>
+                                        </ul>
+
+                                    </li>
+                                    <li>
+                                        <a href="javascript:;" data-toggle="collapse" data-target="#lungCancer">Lung Cancer<i class="fa fa-fw fa-caret-down"></i></a>
+                                        <ul id="lungCancer" class="collapse">
+                                            <li>
+                                                <a href="#">Lung Adenocarcinoma</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Lung Squamous Cell Carcinoma</a>
+                                            </li>
+                                        </ul>
+
+                                    </li>
+                                    <li>
+                                        <a href="#">Prostate Cancer</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Skin Cancer</a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                        </ul>
+                    </li>
+                    <li>
+
+                        <a href="index.html"><i class="fa fa-fw fa-medkit"></i> Treatment Type<i class="fa fa-fw fa-caret-down"></i></a>
+                    </li>
+                    <li>
+                        <a href="charts.html"><i class="fa fa-fw fa-bar-chart-o"></i> Data Type<i class="fa fa-fw fa-caret-down"></i></a>
+                    </li>
+                    <!-- <li>
+                        <a href="tables.html"><i class="fa fa-fw fa-table"></i> Tables</a>
+                    </li>
+                    <li>
+                        <a href="forms.html"><i class="fa fa-fw fa-edit"></i> Forms</a>
+                    </li>
+                    <li>
+                        <a href="bootstrap-elements.html"><i class="fa fa-fw fa-desktop"></i> Bootstrap Elements</a>
+                    </li>
+                    <li>
+                        <a href="bootstrap-grid.html"><i class="fa fa-fw fa-wrench"></i> Bootstrap Grid</a>
+                    </li> -->
+
+                    <!-- <li>
+                        <a href="blank-page.html"><i class="fa fa-fw fa-file"></i> Blank Page</a>
+                    </li>
+                    <li>
+                        <a href="index-rtl.html"><i class="fa fa-fw fa-dashboard"></i> RTL Dashboard</a>
+                    </li> -->
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </nav>
+
+        <div id="page-wrapper">
+
+            <div class="container-fluid">
+
+                <!-- Page Heading -->
+                <div class="row">
+                    <div class="col-lg-12 ">
+                        <ol class="breadcrumb breadcrumb-arrow">
+                            <li><a href="#">Genomic/Epigenomic Analysis</a></li>
+                            <li><a href="#">Molecular Pathway</a></li>
+                            <li class="active"><span>Clinical Validation</span></li>
+                        </ol>
+
+                    </div>
+                </div>
+                <!-- /.row -->
+
+                <div class="row">
+                    <div class="col-lg-offset-2 col-lg-8">
+                        <div class="well well-lg">
+
+                        </div>
+
+                        <div class="panel panel-default">
+                            <div class="panel-heading">This Page is Disabled</div>
+                            <div class="panel-body">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras pellentesque a ipsum vitae malesuada. Curabitur varius tortor nec tortor efficitur, in consectetur dolor lacinia. Nulla et nisi arcu. In hac habitasse platea dictumst. Morbi vitae enim eu lectus
+                                ornare placerat. Donec a pellentesque nunc. Maecenas rutrum ut nisi et efficitur. Nulla sed orci ultrices, vulputate turpis eget, pharetra eros. Curabitur orci lacus, dignissim sit amet diam eget, accumsan tempus est. Donec
+                                interdum finibus porta. Pellentesque dignissim tincidunt nisl eu blandit. Proin metus nisl, consequat at quam sit amet, suscipit pharetra est. Aliquam erat volutpat. Cras varius tellus in tempus congue. Mauris sit amet
+                                eleifend lacus. Fusce molestie, ligula sit amet accumsan porta, risus elit gravida eros, nec porttitor mauris orci quis tellus. Proin posuere neque neque, ac suscipit magna rhoncus eu. Suspendisse potenti. Praesent varius
+                                lobortis consectetur. Donec sed urna mauris. Proin quis arcu tristique, volutpat massa cursus, ullamcorper erat. Mauris mollis magna et nisl hendrerit, sit amet vehicula eros consequat. Orci varius natoque penatibus et
+                                magnis dis parturient montes, nascetur ridiculus mus. Fusce vestibulum elit metus, a facilisis velit facilisis mollis. Vivamus id felis vitae dolor ullamcorper consequat. Integer sed mattis neque. Praesent pharetra nisi
+                                nunc, at faucibus enim mattis vehicula. Donec in nibh nisi. Nunc egestas sollicitudin sem ut pharetra. Duis sit amet elit felis. Nulla in maximus mauris. In hac habitasse platea dictumst. Vivamus pellentesque velit elit,
+                                vitae auctor dolor laoreet eu. Etiam egestas, mauris eu vulputate tincidunt, elit odio rhoncus nisi, at congue dolor ipsum quis mi. In vulputate mattis semper. Praesent a mi vel ipsum sodales tincidunt. Nam posuere ipsum
+                                nisl, in posuere massa ultrices vel. Aliquam erat volutpat. In sed vulputate dolor, a tristique arcu. Nunc sagittis ac magna id suscipit.</div>
+
+                        </div>
+                    </div>
+
+
+                </div>
+                <!-- /.container-fluid -->
+
+            </div>
+            <!-- /#page-wrapper -->
+
+        </div>
+        <!-- /#wrapper -->
+
+        <!-- jQuery -->
+        <script src="js/jquery.js"></script>
+
+        <!-- Bootstrap Core JavaScript -->
+        <script src="js/bootstrap.min.js"></script>
+
+        <!-- Morris Charts JavaScript -->
+        <script src="js/plugins/morris/raphael.min.js"></script>
+        <script src="js/plugins/morris/morris.min.js"></script>
+        <script src="js/plugins/morris/morris-data.js"></script>
+
+</body>
+
+</html>
