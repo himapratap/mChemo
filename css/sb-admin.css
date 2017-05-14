@@ -6,6 +6,11 @@
 
 
 /* Global Styles */
+@font-face {
+    font-family:"Roboto Condensed";
+    src: url("../fonts/Roboto_Condensed/RobotoCondensed-Bold.ttf") /* EOT file for IE */
+}
+
 
 body {
     margin-top: 100px;
