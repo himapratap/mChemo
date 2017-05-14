@@ -22,6 +22,8 @@
 
     <!-- Custom Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700" rel="stylesheet">
+
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -46,7 +48,10 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.html"><strong>mChemo</strong></a>
+                <a class="navbar-brand logo" href="index.html">
+                    <strong>mChemo</strong>
+                    <div class="subTitle">MECHANISM OF CHEMOTHERAPHY</div>
+                </a>
             </div>
             <!-- Top Menu Items -->
             <ul class="nav navbar-right top-nav">
@@ -57,15 +62,15 @@
                 <li><a href="#">Help</a></li>
                 <li><a href="#">About</a></li>
                 <form class="navbar-form navbar-left">
-                  <form class="navbar-form" role="search">
-                          <div class="input-group">
-                              <input type="text" class="form-control" placeholder="Search.." name="q">
-                              <div class="input-group-btn">
-                                  <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
-                              </div>
-                          </div>
+                    <form class="navbar-form" role="search">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Search.." name="q">
+                            <div class="input-group-btn">
+                                <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+                            </div>
+                        </div>
 
-                </form>
+                    </form>
 
             </ul>
             <!-- Sidebar Menu Items - These collapse to the responsive navigation menu on small screens -->
@@ -131,35 +136,117 @@
                                     </li>
                                 </ul>
                             </li>
+                            <li>
+                                <a href="javascript:;" data-toggle="collapse" data-target="#multipleCancer">Multiple Cancer Analysis<i class="fa fa-fw fa-caret-down"></i></a>
 
+                            </li>
                         </ul>
                     </li>
                     <li>
 
-                        <a href="index.html"><i class="fa fa-fw fa-medkit"></i> Treatment Type<i class="fa fa-fw fa-caret-down"></i></a>
-                    </li>
-                    <li>
-                        <a href="charts.html"><i class="fa fa-fw fa-bar-chart-o"></i> Data Type<i class="fa fa-fw fa-caret-down"></i></a>
-                    </li>
-                    <!-- <li>
-                        <a href="tables.html"><i class="fa fa-fw fa-table"></i> Tables</a>
-                    </li>
-                    <li>
-                        <a href="forms.html"><i class="fa fa-fw fa-edit"></i> Forms</a>
-                    </li>
-                    <li>
-                        <a href="bootstrap-elements.html"><i class="fa fa-fw fa-desktop"></i> Bootstrap Elements</a>
-                    </li>
-                    <li>
-                        <a href="bootstrap-grid.html"><i class="fa fa-fw fa-wrench"></i> Bootstrap Grid</a>
-                    </li> -->
+                        <a href="javascript:;" data-toggle="collapse" data-target="#treatment"><i class="fa fa-fw fa-medkit"></i> Treatment Type<i class="fa fa-fw fa-caret-down"></i></a>
 
-                    <!-- <li>
-                        <a href="blank-page.html"><i class="fa fa-fw fa-file"></i> Blank Page</a>
+                        <ul id="treatment" class="collapse">
+                            <li>
+                                <a href="javascript:;" data-toggle="collapse" data-target="#singleChemo">Chemo Agents<i class="fa fa-fw fa-caret-down"></i></a>
+                                <ul id="singleChemo" class="collapse">
+
+                                    <li>
+                                        <a href="javascript:;" data-toggle="collapse" data-target="#singleChemoAgents">Single Treatment<i class="fa fa-fw fa-caret-down"></i></a>
+                                        <ul id="singleChemoAgents" class="collapse">
+                                            <li>
+                                                <a href="#">Alkylating Agents</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Angiogenesis inhibitor</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Antimetabolites</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Antineoplastic Agents</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Aromatase Inhibitors</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Heparanase Inhibitors</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Kinase Inhibitors</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Plant Alkanoid</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Topoisomerase Inhibitors</a>
+                                            </li>
+                                        </ul>
+
+                                    </li>
+                                    <li>
+                                        <a href="#">Multiple Treatment</a>
+                                    </li>
+
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="javascript:;" data-toggle="collapse" data-target="#nonChemo">Non-Chemo Agents<i class="fa fa-fw fa-caret-down"></i></a>
+                                <ul id="nonChemo" class="collapse">
+
+                                    <li>
+                                        <a href="javascript:;" data-toggle="collapse" data-target="#nonChemoSingle">Single Treatment<i class="fa fa-fw fa-caret-down"></i></a>
+                                        <ul id="nonChemoSingle" class="collapse">
+                                            <li>
+                                                <a href="#">Biphosphonate Derivative</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Cytokine Agents</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Folic Acid Antagonists</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Virus Theraphy</a>
+                                            </li>
+                                        </ul>
+
+                                    </li>
+                                    <li>
+                                        <a href="#">Multiple Treatment</a>
+                                    </li>
+
+                                </ul>
+                            </li>
+                        </ul>
                     </li>
                     <li>
-                        <a href="index-rtl.html"><i class="fa fa-fw fa-dashboard"></i> RTL Dashboard</a>
-                    </li> -->
+                        <a href="javascript:;" data-toggle="collapse" data-target="#dataType"><i class="fa fa-fw fa-bar-chart-o"></i> Data Type<i class="fa fa-fw fa-caret-down"></i></a>
+                        <ul id="dataType" class="collapse">
+
+                            <li>
+                                <a href="#">
+                                    <div class="checkbox">
+                                        <label><input type="checkbox" checked> Gene Expression </label>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="checkbox">
+                                        <label><input type="checkbox" checked> DNA Methylation </label>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="checkbox">
+                                        <label><input type="checkbox" checked> Clinical Data </label>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
