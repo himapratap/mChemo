@@ -9,20 +9,20 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>mChemo</title>
+    <title>mCHEMo</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link href="css/sb-admin.css" rel="stylesheet">
+    <link href="css/mchemo.css" rel="stylesheet">
 
     <!-- Morris Charts CSS -->
     <link href="css/plugins/morris.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-   <!-- <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700" rel="stylesheet"> -->
+    <!-- <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700" rel="stylesheet"> -->
     <!-- <link href="fonts/css/font-awesome.min.css" rel="stylesheet" type="text/css"> -->
 
 
@@ -51,7 +51,7 @@
                     <span class="icon-bar"></span>
                 </button>
                 <a class="navbar-brand logo" href="index.html">
-                    <strong>mChemo</strong>
+                    <strong>mCHEMo</strong>
                     <div class="subTitle">MECHANISM OF CHEMOTHERAPHY</div>
                 </a>
             </div>
@@ -63,27 +63,28 @@
                 <li><a href="#">Tutorials</a></li>
                 <li><a href="#">Help</a></li>
                 <li><a href="#">About</a></li>
-                <form class="navbar-form navbar-left">
-                    <form class="navbar-form" role="search">
-                        <div class="input-group">
-                            <input type="text" class="form-control" placeholder="Search.." name="q">
-                            <div class="input-group-btn">
-                                <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+                <li>
+                    <form class="navbar-form navbar-left">
+                        <form class="navbar-form" role="search">
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="Search.." name="q">
+                                <div class="input-group-btn">
+                                    <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+                                </div>
                             </div>
-                        </div>
 
-                    </form>
-
+                        </form>
+                </li>
             </ul>
             <!-- Sidebar Menu Items - These collapse to the responsive navigation menu on small screens -->
 
             <div class="collapse navbar-collapse navbar-ex1-collapse">
                 <ul class="nav navbar-nav side-nav">
                     <li class="active">
-                        <a href="javascript:;" data-toggle="collapse" data-target="#single"><i class="fa fa-fw fa-list" aria-hidden="true"></i> Cancer Type <i class="fa fa-fw fa-caret-down pull-right"></i></a>
+                        <a href="javascript:;" data-toggle="collapse" data-target="#single"><i class="fa fa-fw fa-list" aria-hidden="true"></i> Cancer Type <i class="fa fa-fw fa-caret-right pull-right mainLevel"></i></a>
                         <ul id="single" class="collapse">
                             <li>
-                                <a href="javascript:;" data-toggle="collapse" data-target="#singleCancer"><i class="fa fa-fw fa-plus-square"></i>  Single Cancer Analysis </a>
+                                <a href="javascript:;" data-toggle="collapse" data-target="#singleCancer"><i class="fa fa-fw fa-plus-square secondLevel"></i>  Single Cancer Analysis </a>
                                 <ul id="singleCancer" class="collapse">
                                     <li>
                                         <a href="#">Breast Cancer</a>
@@ -92,7 +93,7 @@
                                         <a href="#">Cervical Cancer</a>
                                     </li>
                                     <li>
-                                        <a href="javascript:;" data-toggle="collapse" data-target="#colorectalCancer"><i class="fa fa-fw fa-plus-square"></i>  Colorectal Cancer </a>
+                                        <a href="javascript:;" data-toggle="collapse" data-target="#colorectalCancer"><i class="fa fa-fw fa-plus-square thirdLevel"></i>  Colorectal Cancer </a>
                                         <ul id="colorectalCancer" class="collapse">
                                             <li>
                                                 <a href="#">Colon Adenocarcinoma</a>
@@ -104,7 +105,7 @@
 
                                     </li>
                                     <li>
-                                        <a href="javascript:;" data-toggle="collapse" data-target="#kidneyCancer"><i class="fa fa-fw fa-plus-square"></i>  Kidney Cancer</a>
+                                        <a href="javascript:;" data-toggle="collapse" data-target="#kidneyCancer"><i class="fa fa-fw fa-plus-square thirdLevel"></i>  Kidney Cancer</a>
                                         <ul id="kidneyCancer" class="collapse">
                                             <li>
                                                 <a href="#">Kidney Chromophobe</a>
@@ -119,7 +120,7 @@
 
                                     </li>
                                     <li>
-                                        <a href="javascript:;" data-toggle="collapse" data-target="#lungCancer"><i class="fa fa-fw fa-plus-square"></i>  Lung Cancer </a>
+                                        <a href="javascript:;" data-toggle="collapse" data-target="#lungCancer"><i class="fa fa-fw fa-plus-square thirdLevel"></i>  Lung Cancer </a>
                                         <ul id="lungCancer" class="collapse">
                                             <li>
                                                 <a href="#">Lung Adenocarcinoma</a>
@@ -139,28 +140,28 @@
                                 </ul>
                             </li>
                             <li>
-                                <a href="javascript:;" data-toggle="collapse" data-target="#multipleCancer"><i class="fa fa-fw fa-plus-square"></i>  Multiple Cancer Analysis </a>
+                                <a href="javascript:;" data-toggle="collapse" data-target="#multipleCancer"><i class="fa fa-fw fa-plus-square secondLevel"></i>  Multiple Cancer Analysis </a>
 
                             </li>
                         </ul>
                     </li>
                     <li>
 
-                        <a href="javascript:;" data-toggle="collapse" data-target="#treatment"><i class="fa fa-fw fa-medkit"></i> Treatment Type<i class="fa fa-fw fa-caret-down pull-right"></i></a>
+                        <a href="javascript:;" data-toggle="collapse" data-target="#treatment"><i class="fa fa-fw fa-medkit"></i> Treatment Type<i class="fa fa-fw fa-caret-right pull-right mainLevel"></i></a>
 
                         <ul id="treatment" class="collapse">
                             <li>
-                                <a href="javascript:;" data-toggle="collapse" data-target="#singleChemo"><i class="fa fa-fw fa-plus-square"></i>  Chemo Agents </a>
+                                <a href="javascript:;" data-toggle="collapse" data-target="#singleChemo"><i class="fa fa-fw fa-plus-square secondLevel"></i>  Chemo Agents </a>
                                 <ul id="singleChemo" class="collapse">
 
                                     <li>
-                                        <a href="javascript:;" data-toggle="collapse" data-target="#singleChemoAgents"><i class="fa fa-fw fa-plus-square"></i>  Single Treatment </a>
+                                        <a href="javascript:;" data-toggle="collapse" data-target="#singleChemoAgents"><i class="fa fa-fw fa-plus-square thirdLevel"></i>  Single Treatment </a>
                                         <ul id="singleChemoAgents" class="collapse">
                                             <li>
                                                 <a href="#">Alkylating Agents</a>
                                             </li>
                                             <li>
-                                                <a href="#">Angiogenesis inhibitor</a>
+                                                <a href="#">Angiogenesis inhibitors</a>
                                             </li>
                                             <li>
                                                 <a href="#">Antimetabolites</a>
@@ -178,7 +179,7 @@
                                                 <a href="#">Kinase Inhibitors</a>
                                             </li>
                                             <li>
-                                                <a href="#">Plant Alkanoid</a>
+                                                <a href="#">Plant Alkanoids</a>
                                             </li>
                                             <li>
                                                 <a href="#">Topoisomerase Inhibitors</a>
@@ -187,13 +188,14 @@
 
                                     </li>
                                     <li>
-                                        <a href="#">Multiple Treatment</a>
+                                        <a href="javascript:;" data-toggle="collapse" data-target="#"><i class="fa fa-fw fa-plus-square thirdLevel"></i>  Multiple Treatment</a>
+
                                     </li>
 
                                 </ul>
                             </li>
                             <li>
-                                <a href="javascript:;" data-toggle="collapse" data-target="#nonChemo"><i class="fa fa-fw fa-plus-square"></i>  Non-Chemo Agents</a>
+                                <a href="javascript:;" data-toggle="collapse" data-target="#nonChemo"><i class="fa fa-fw fa-plus-square secondLevel"></i>  Non-Chemo Agents</a>
                                 <ul id="nonChemo" class="collapse">
 
                                     <li>
@@ -223,29 +225,40 @@
                         </ul>
                     </li>
                     <li>
-                        <a href="javascript:;" data-toggle="collapse" data-target="#dataType"><i class="fa fa-fw fa-bar-chart-o"></i> Data Type<i class="fa fa-fw fa-caret-down"></i></a>
+                        <a href="javascript:;" data-toggle="collapse" data-target="#dataType"><i class="fa fa-fw fa-bar-chart-o"></i> Data Type<i class="fa fa-fw fa-caret-right pull-right mainLevel"></i></a>
                         <ul id="dataType" class="collapse">
 
                             <li>
-                                <a href="#">
-                                    <div class="checkbox">
-                                        <label><input type="checkbox" checked> Gene Expression </label>
-                                    </div>
-                                </a>
+                                <a href="#">  Gene Expression</a>
                             </li>
                             <li>
-                                <a href="#">
-                                    <div class="checkbox">
-                                        <label><input type="checkbox" checked> DNA Methylation </label>
-                                    </div>
-                                </a>
+                                <a href="javascript:;" data-toggle="collapse" data-target="#methylation"><i class="fa fa-fw fa-plus-square secondLevel"></i>  DNA Methylation </a>
+                                <ul id="methylation" class="collapse">
+
+                                    <li>
+                                        <a href="#">Beta Value</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">M Value</a>
+                                    </li>
+                                </ul>
                             </li>
                             <li>
-                                <a href="#">
-                                    <div class="checkbox">
-                                        <label><input type="checkbox" checked> Clinical Data </label>
-                                    </div>
-                                </a>
+                                <a href="javascript:;" data-toggle="collapse" data-target="#clinicalData"><i class="fa fa-fw fa-plus-square secondLevel"></i>  Clinical Data</a>
+                                <ul id="clinicalData" class="collapse">
+                                    <li>
+                                        <a href="#"> Clinical Patients</a>
+                                    </li>
+                                    <li>
+                                        <a href="#"> Follow-up</a>
+                                    </li>
+                                    <li>
+                                        <a href="#"> Drug</a>
+                                    </li>
+                                    <li>
+                                        <a href="#"> Radiation</a>
+                                    </li>
+                                </ul>
                             </li>
                         </ul>
                     </li>
@@ -308,6 +321,10 @@
 
         <!-- Bootstrap Core JavaScript -->
         <script src="js/bootstrap.min.js"></script>
+
+        <!-- JavaScript for the main page-->
+        <script src="js/mchemo.js">
+        </script>
 
         <!-- Morris Charts JavaScript -->
         <script src="js/plugins/morris/raphael.min.js"></script>
