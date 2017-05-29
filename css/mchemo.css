@@ -6,11 +6,11 @@
 
 
 /* Global Styles */
-@font-face {
-    font-family:"Roboto Condensed";
-    src: url("../fonts/Roboto_Condensed/RobotoCondensed-Bold.ttf") /* EOT file for IE */
-}
 
+@font-face {
+    font-family: "Roboto Condensed";
+    src: url("../fonts/Roboto_Condensed/RobotoCondensed-Bold.ttf")/* EOT file for IE */
+}
 
 body {
     margin-top: 100px;
@@ -23,6 +23,12 @@ body {
     }
 }
 
+@media screen and (max-width: 699px) and (min-width: 520px) {
+    #page-wrapper {
+        margin-top: 175px;
+    }
+}
+
 #wrapper {
     padding-left: 0;
 }
@@ -30,6 +36,7 @@ body {
 #page-wrapper {
     width: 100%;
     padding: 0;
+    padding-top: 20px;
     background-color: #fff;
 }
 
@@ -150,7 +157,7 @@ ul.alert-dropdown {
     color: #999;
 }
 
-.side-nav>li>ul>li>a:hover ,.side-nav>li>ul>li.active.open{
+.side-nav>li>ul>li>a:hover, .side-nav>li>ul>li.active.open {
     color: #fff;
 }
 
@@ -376,10 +383,11 @@ li {
     font-size: 40px;
 }
 
-.subTitle{
-  font-size: 10px;
-
+.subTitle {
+    font-size: 10px;
 }
 
-.info{
- }
+.main {
+padding-right: 30px;
+padding-left: 30px
+}

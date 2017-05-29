@@ -17,6 +17,7 @@
     <!-- Custom CSS -->
     <link href="css/mchemo.css" rel="stylesheet">
 
+
     <!-- Morris Charts CSS -->
     <link href="css/plugins/morris.css" rel="stylesheet">
 
@@ -267,11 +268,12 @@
             <!-- /.navbar-collapse -->
         </nav>
 
-        <div id="page-wrapper">
+        <div id="page-wrapper" class="container-fluid">
 
-            <div class="container-fluid">
+            <div class="container-fluid main">
 
                 <!-- Page Heading -->
+
                 <div class="row">
                     <div class="col-sm-12 ">
                         <ol class="breadcrumb breadcrumb-arrow">
@@ -282,119 +284,113 @@
 
                     </div>
                 </div>
-                <!-- /.row -->
-                <div class="well well-sm">
-                    <div class="row info">
-                        <div class="col-sm-12">
-                            <button type="button" class="btn btn-primary col-md-5">
-              <h5>Cancer Type</h5></button>
-                            <button type="button" class="btn  btn-default col-md-7">
-              <h5>Lung Adenocarcinoma</h5></button>
-                        </div>
-                        <div class="col-sm-12">
-                            <button type="button" class="btn btn-primary col-md-5">
-            <h5>Treatment</h5></button>
-                            <button type="button" class="btn btn-default col-md-7">
-            <h5>Cisplatin</h5></button>
-                        </div>
-                        <div class="col-sm-12">
-                            <button type="button" class="btn btn-primary col-md-5">
-            <h5>Data Type</h5>
-            <button type="button" class="btn btn-default col-md-7">
-              <h5>Clinical: Data</h5>
-          </div>
-          </div>
-        </div>
-  <div class="well well-sm">
-    <div class="row info">
-        <div class="col-sm-5">
-           <h4 class="text-primary"><strong>  Select Patient:</strong> </h4>
-        </div>
-        <div class="col-sm-7">
-          <div class="form-group">
-             <select class="form-control" id="sel1">
-              <option>LUAD patients treated with Cisplatin</option>
-              <option>2</option>
-              <option>3</option>
-              <option>4</option>
-            </select>
-          </div>
-        </div>
-    </div>
-  </div>
-  <div class="well well-lg">
-    <div class="row table-responsive">
-      <table class = "table table-hover">
-        <colgroup>
-                    <col class="col-lg-1">
-                    <col class="col-lg-1">
-                    <col class="col-lg-1">
-                    <col class="col-lg-1">
-                     <col class="col-lg-1">
-                      <col class="col-lg-1">
-                </colgroup>
-          <thead>
-            <tr>
-               <th> bcd_patient_barcode </th>
-               <th> drug_name </th>
-               <th> therapy_type </th>
-               <th> days_to_drug_therapy_start </th>
-               <th> therapy_ongoin </th>
-               <th> days_to_drug_therapy_end </th>
-                <th> More.. </th>
-           </tr>
-          </thead>
-          <tbody>
-              <tr>
-                  <td> TCGA-53-A$EZ </td>
-                  <td> Cisplatin </td>
-                  <td> Chemotherapy </td>
-                  <td> 132 </td>
-                  <td> NO </td>
-                  <td> 226 </td>
-                  <td> <button class = "btn btn-primary"> View </button> </td>
-                            </tr>
-                            <tr>
-                                <td> TCGA-53-6970 </td>
-                                <td> Cisplatin </td>
-                                <td> Chemotherapy </td>
-                                <td> 132 </td>
-                                <td> NO </td>
 
-                                <td> 226 </td>
-                                <td> <button class="btn btn-primary"> View </button> </td>
-                            </tr>
-                            </tbody>
+
+                <!-- /.row -->
+                <div class="row">
+                    <div class="well well-sm col-sm-12">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <button type="button" class="btn btn-warning col-sm-offset-2 col-sm-4 ">
+                                                     <strong>Cancer Type</strong></button>
+                                <button type="button" class="btn btn-default col-sm-4">
+                                                         <strong>...</strong></button>
+                            </div>
+                            <div class="row">
+                                <button type="button" class="btn btn-primary col-sm-offset-2 col-sm-4">
+                                             <strong>Treatment</strong></button>
+                                <button type="button" class="btn btn-default col-sm-4">
+                                                                           <strong>.... </strong></button>
+                            </div>
+                            <div class="row">
+                                <button type="button" class="btn btn-primary col-sm-offset-2 col-sm-4">
+                                         <strong>Data Type</strong> </button>
+                                <button type="button" class="btn btn-default col-sm-4"> <strong>...</strong> </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="row">
+                    <div class="well well-sm col-sm-12">
+                        <div class="row info">
+                            <div class="col-sm-5">
+                                <h4 class="text-primary"><strong class="text-center">  Select Patient:</strong> </h4>
+                            </div>
+                            <div class="col-sm-7">
+                                <div class="form-group">
+                                    <select class="form-control" id="sel1">
+                                              <option>-------</option>
+                                                <option>2</option>
+                                                <option>3</option>
+                                                <option>4</option>
+                                                </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="row">
+                    <div class="well well-sm">
+                        <div class="table-responsive">
+                            <table class="table table-hover">
+
+                                <thead>
+                                    <tr>
+                                        <th> bcd_patient_barcode </th>
+                                        <th> drug_name </th>
+                                        <th> therapy_type </th>
+                                        <th> days_to_drug_therapy_start </th>
+                                        <th> therapy_ongoin </th>
+                                        <th> days_to_drug_therapy_end </th>
+                                        <th> More.. </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td> --- </td>
+                                        <td> --- </td>
+                                        <td> --- </td>
+                                        <td> --- </td>
+                                        <td> --- </td>
+                                        <td> --- </td>
+                                    </tr>
+                                </tbody>
 
                             </table>
                         </div>
                     </div>
                 </div>
-                <!-- /.container-fluid -->
 
             </div>
-            <!-- /#page-wrapper -->
+            <!-- /.container-fluid -->
 
-            </tbody>
-            </table>
         </div>
-        <!-- /#wrapper -->
+        <!-- /#page-wrapper -->
 
-        <!-- jQuery -->
-        <script src="js/jquery.js"></script>
 
-        <!-- Bootstrap Core JavaScript -->
-        <script src="js/bootstrap.min.js"></script>
+    </div>
+    <!-- /#wrapper -->
 
-        <!-- JavaScript for the main page-->
-        <script src="js/mchemo.js">
-        </script>
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
 
-        <!-- Morris Charts JavaScript -->
-        <script src="js/plugins/morris/raphael.min.js"></script>
-        <script src="js/plugins/morris/morris.min.js"></script>
-        <script src="js/plugins/morris/morris-data.js"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
 
+    <!-- JavaScript for the main page-->
+    <script src="js/mchemo.js">
+    </script>
+
+    <!-- Morris Charts JavaScript -->
+    <script src="js/plugins/morris/raphael.min.js"></script>
+    <script src="js/plugins/morris/morris.min.js"></script>
+    <script src="js/plugins/morris/morris-data.js"></script>
+    </div>
+    </div>
 </body>
 
 </html>
