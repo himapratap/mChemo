@@ -52,7 +52,7 @@
                 </button>
                 <a class="navbar-brand logo" href="index.html">
                     <strong>mCHEMo</strong>
-                    <div class="subTitle">MECHANISM OF CHEMOTHERAPHY</div>
+                    <div class="subTitle">MECHANISM OF CHEMOTHERAPY</div>
                 </a>
             </div>
             <!-- Top Menu Items -->
@@ -283,36 +283,100 @@
                     </div>
                 </div>
                 <!-- /.row -->
-
-                <div class="row">
-                    <div class="col-sm-offset-2 col-sm-8">
-                        <div class="well well-sm">
-
+                <div class="well well-sm">
+                    <div class="row info">
+                        <div class="col-sm-12">
+                            <button type="button" class="btn btn-primary col-md-5">
+              <h5>Cancer Type</h5></button>
+                            <button type="button" class="btn  btn-default col-md-7">
+              <h5>Lung Adenocarcinoma</h5></button>
                         </div>
+                        <div class="col-sm-12">
+                            <button type="button" class="btn btn-primary col-md-5">
+            <h5>Treatment</h5></button>
+                            <button type="button" class="btn btn-default col-md-7">
+            <h5>Cisplatin</h5></button>
+                        </div>
+                        <div class="col-sm-12">
+                            <button type="button" class="btn btn-primary col-md-5">
+            <h5>Data Type</h5>
+            <button type="button" class="btn btn-default col-md-7">
+              <h5>Clinical: Data</h5>
+          </div>
+          </div>
+        </div>
+  <div class="well well-sm">
+    <div class="row info">
+        <div class="col-sm-5">
+           <h4 class="text-primary"><strong>  Select Patient:</strong> </h4>
+        </div>
+        <div class="col-sm-7">
+          <div class="form-group">
+             <select class="form-control" id="sel1">
+              <option>LUAD patients treated with Cisplatin</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+            </select>
+          </div>
+        </div>
+    </div>
+  </div>
+  <div class="well well-lg">
+    <div class="row table-responsive">
+      <table class = "table table-hover">
+        <colgroup>
+                    <col class="col-lg-1">
+                    <col class="col-lg-1">
+                    <col class="col-lg-1">
+                    <col class="col-lg-1">
+                     <col class="col-lg-1">
+                      <col class="col-lg-1">
+                </colgroup>
+          <thead>
+            <tr>
+               <th> bcd_patient_barcode </th>
+               <th> drug_name </th>
+               <th> therapy_type </th>
+               <th> days_to_drug_therapy_start </th>
+               <th> therapy_ongoin </th>
+               <th> days_to_drug_therapy_end </th>
+                <th> More.. </th>
+           </tr>
+          </thead>
+          <tbody>
+              <tr>
+                  <td> TCGA-53-A$EZ </td>
+                  <td> Cisplatin </td>
+                  <td> Chemotherapy </td>
+                  <td> 132 </td>
+                  <td> NO </td>
+                  <td> 226 </td>
+                  <td> <button class = "btn btn-primary"> View </button> </td>
+                            </tr>
+                            <tr>
+                                <td> TCGA-53-6970 </td>
+                                <td> Cisplatin </td>
+                                <td> Chemotherapy </td>
+                                <td> 132 </td>
+                                <td> NO </td>
 
-                        <div class="panel panel-default">
-                            <div class="panel-heading">This Page is Disabled</div>
-                            <div class="panel-body">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras pellentesque a ipsum vitae malesuada. Curabitur varius tortor nec tortor efficitur, in consectetur dolor lacinia. Nulla et nisi arcu. In hac habitasse platea dictumst. Morbi vitae enim eu lectus
-                                ornare placerat. Donec a pellentesque nunc. Maecenas rutrum ut nisi et efficitur. Nulla sed orci ultrices, vulputate turpis eget, pharetra eros. Curabitur orci lacus, dignissim sit amet diam eget, accumsan tempus est. Donec
-                                interdum finibus porta. Pellentesque dignissim tincidunt nisl eu blandit. Proin metus nisl, consequat at quam sit amet, suscipit pharetra est. Aliquam erat volutpat. Cras varius tellus in tempus congue. Mauris sit amet
-                                eleifend lacus. Fusce molestie, ligula sit amet accumsan porta, risus elit gravida eros, nec porttitor mauris orci quis tellus. Proin posuere neque neque, ac suscipit magna rhoncus eu. Suspendisse potenti. Praesent varius
-                                lobortis consectetur. Donec sed urna mauris. Proin quis arcu tristique, volutpat massa cursus, ullamcorper erat. Mauris mollis magna et nisl hendrerit, sit amet vehicula eros consequat. Orci varius natoque penatibus et
-                                magnis dis parturient montes, nascetur ridiculus mus. Fusce vestibulum elit metus, a facilisis velit facilisis mollis. Vivamus id felis vitae dolor ullamcorper consequat. Integer sed mattis neque. Praesent pharetra nisi
-                                nunc, at faucibus enim mattis vehicula. Donec in nibh nisi. Nunc egestas sollicitudin sem ut pharetra. Duis sit amet elit felis. Nulla in maximus mauris. In hac habitasse platea dictumst. Vivamus pellentesque velit elit,
-                                vitae auctor dolor laoreet eu. Etiam egestas, mauris eu vulputate tincidunt, elit odio rhoncus nisi, at congue dolor ipsum quis mi. In vulputate mattis semper. Praesent a mi vel ipsum sodales tincidunt. Nam posuere ipsum
-                                nisl, in posuere massa ultrices vel. Aliquam erat volutpat. In sed vulputate dolor, a tristique arcu. Nunc sagittis ac magna id suscipit.</div>
+                                <td> 226 </td>
+                                <td> <button class="btn btn-primary"> View </button> </td>
+                            </tr>
+                            </tbody>
 
+                            </table>
                         </div>
                     </div>
-
-
                 </div>
                 <!-- /.container-fluid -->
 
             </div>
             <!-- /#page-wrapper -->
 
+            </tbody>
+            </table>
         </div>
         <!-- /#wrapper -->
 
