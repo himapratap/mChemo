@@ -389,5 +389,19 @@ li {
 
 .main {
 padding-right: 30px;
-padding-left: 30px
+padding-left: 30px;
+}
+
+.info .btn-primary{
+ background-color: #555555;
+}
+
+.patient{
+  font-family:    "Arial Black", Gadget, sans-serif;
+
+}
+
+.breadcrumb-arrow li {
+  font-family:    "Arial Black", Gadget, sans-serif;
+  font-size:      1em;
 }
