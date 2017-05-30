@@ -27,6 +27,9 @@ body {
     #page-wrapper {
         margin-top: 175px;
     }
+    .navCrumbs {
+        margin-bottom: 30px;
+    }
 }
 
 #wrapper {
@@ -388,20 +391,19 @@ li {
 }
 
 .main {
-padding-right: 30px;
-padding-left: 30px;
+    padding-right: 30px;
+    padding-left: 30px;
 }
 
-.info .btn-primary{
- background-color: #555555;
+.info .btn-primary {
+    background-color: #555555;
 }
 
-.patient{
-  font-family:    "Arial Black", Gadget, sans-serif;
-
+.patient {
+    font-family: Georgia, serif;
 }
 
 .breadcrumb-arrow li {
-  font-family:    "Arial Black", Gadget, sans-serif;
-  font-size:      1em;
+    font-family: "Arial Black", Gadget, sans-serif;
+    font-size: 1.3em;
 }
